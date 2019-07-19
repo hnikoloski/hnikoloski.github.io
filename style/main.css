@@ -1,0 +1,284 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: #cf5831;
+    color: #fff;
+}
+
+.sectionTitle {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.gray {
+    background: #F5F5F5;
+}
+
+section {
+    color: #444;
+    padding: 4% 5%;
+}
+
+.magenta {
+    color: #e31b6d;
+    width: 10px!important;
+}
+
+.divider {
+    width: 7%;
+    border: 0.4vh #444 solid;
+    background: #444;
+}
+
+#particles-js {
+    background: #252934;
+    height: 70vh;
+}
+
+.heroText {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 30vh;
+    left: 32%;
+}
+
+.heroText h3 {
+    font-size: 32pt;
+    line-height: 0.5;
+}
+
+@media only screen and (max-width: 600px) {
+    .heroText h3 {
+        line-height: 1;
+    }
+    .heroText {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 20vh;
+        left: 10%;
+    }
+}
+
+
+/* Nav */
+
+.bg-light {
+    background-color: #1B242F!important;
+}
+
+.nav-link {
+    color: #fff!important;
+    padding: 0 20px!important;
+    line-height: 0;
+}
+
+.nav-link:hover {
+    color: #e31b6d!important;
+}
+
+nav {
+    border-bottom: 3px solid #04C2C9;
+    text-align: left;
+}
+
+.scrolled {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    transition: all 0.6s ease-out;
+}
+
+.logo {
+    margin-left: 5%!important;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 300ms;
+}
+
+.logoImg {
+    line-height: 0;
+    width: 90px;
+    height: auto;
+}
+
+
+/* About */
+
+
+/* Picture */
+
+.imgFrame img {
+    width: 300px;
+    height: auto;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(40% at 50% 50%);
+}
+
+
+/* Skills */
+
+.logosContainer,
+.education {
+    margin-top: 50px;
+}
+
+.skillLogos img {
+    margin-top: 30px;
+    min-height: 60px;
+    max-height: 60px;
+}
+
+.skillLogos:hover {
+    transform: scale(1.1);
+    transition: all ease-in-out 300ms;
+}
+
+
+/* Languages */
+
+.languages ul li {
+    list-style: none;
+}
+
+
+/* Contact */
+
+#contact {
+    background: #252934;
+    color: #fff;
+}
+
+#contact p {
+    color: #04C2C9;
+}
+
+#contact ul li {
+    list-style-type: square;
+}
+
+#contact ul li a {
+    color: #fff;
+    text-decoration-color: #04C2C9;
+}
+
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    padding: 10px 15px;
+    background: #1E242C;
+    font-size: 12pt;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
+#contact form .button {
+    float: right;
+    margin: 5px 0 0 0;
+    font-size: 12pt;
+    padding: 10px 30px;
+    color: #fff;
+    background: transparent;
+    outline: 0;
+    border: 2px solid #fff;
+    transition: all .5s;
+}
+
+#contact form .button:hover {
+    background: #04C2C9;
+    border-color: #04C2C9;
+}
+
+#contact form .button:active {
+    transform: scale(0.5)
+}
+
+
+/* Footer */
+
+footer {
+    background: #1B242F;
+    padding: 35px 0;
+}
+
+footer ul {
+    margin-left: -40px;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline;
+}
+
+footer ul li i {
+    padding: 10px;
+    margin: 0 10px;
+    background: #262f38;
+    min-width: 50px;
+    color: #fff;
+}
+
+footer p {
+    text-align: center;
+}
+
+@-webkit-keyframes pulse {
+    25% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    75% {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+}
+
+@keyframes pulse {
+    25% {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+    75% {
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+    }
+}
+
+.pulse {
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.pulse:hover {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
