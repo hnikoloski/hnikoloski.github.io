@@ -155,6 +155,23 @@ nav {
 }
 
 
+/* Portfolio */
+
+.projectImg {
+    width: 300px;
+    height: 175px;
+    margin: 10px 40px;
+    padding: 15px;
+    border: 0.5px solid rgba(51, 51, 51, 0.2);
+    border-radius: 5px;
+}
+
+.projectImg:hover {
+    /* background: rgba(4, 194, 201, 0.3); */
+    box-shadow: 0px 0px 4px 0px rgba(4, 194, 201, 1);
+}
+
+
 /* Contact */
 
 #contact {

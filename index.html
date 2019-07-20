@@ -130,7 +130,24 @@
             <h2 class="text-center sectionTitle">PORTFOLIO</h2>
             <hr class="divider my-4">
         </div>
-        <a data-fancybox="gallery" href="imgs/logo.png"><img src="imgs/projects/1.jpg"></a>
+        <div class="col-sm projectContainer">
+
+            <div class="row">
+                <a data-fancybox="gallery" href="imgs/projects/Project1.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail1.jpg"></a>
+                <a data-fancybox="gallery" href="imgs/projects/Project2.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail2.jpg"></a>
+                <a data-fancybox="gallery" href="imgs/projects/Project3.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail3.jpg"></a>
+            </div>
+            <div class="row">
+                <a data-fancybox="gallery" href="imgs/projects/Project4.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail4.jpg"></a>
+                <a data-fancybox="gallery" href="imgs/projects/Project5.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail5.jpg"></a>
+                <a data-fancybox="gallery" href="imgs/projects/Project6.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail6.jpg"></a>
+            </div>
+            <div class="row">
+                <a data-fancybox="gallery" href="imgs/projects/Project7.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail7.jpg"></a>
+            </div>
+        </div>
+
+
     </section>
     <section id="contact">
         <div class="container">
@@ -146,11 +163,11 @@
                     </ul>
                 </div>
                 <div class="col-sm">
-                    <form action="">
-                        <input type="text" placeholder="Name" required>
-                        <input type="email" placeholder="Email" required>
-                        <textarea placeholder="Your Message" type="text" name="message" required></textarea><br>
-                        <input class="button" type="submit" id="submit" value="SUBMIT">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Name" required id="name">
+                        <input type="email" placeholder="Email" required id="email">
+                        <textarea placeholder="Your Message" type="text" name="message" required id="message"></textarea><br>
+                        <button class="button" type="submit" id="submit" value="SUBMIT">Submit</button>
                     </form>
                 </div>
 
@@ -186,12 +203,16 @@
 
 
     </footer>
+
     <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js "></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+
+    <script src="scripts/contact.js"></script>
     <script src="scripts/style.js "></script>
 </body>
 
