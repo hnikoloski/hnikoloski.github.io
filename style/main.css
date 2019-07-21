@@ -42,6 +42,13 @@ section {
 #particles-js {
     background: #252934;
     height: 70vh;
+    width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #particles-js {
+        width: 100%;
+    }
 }
 
 .heroText {
@@ -57,9 +64,10 @@ section {
     line-height: 0.5;
 }
 
-@media only screen and (max-width: 600px) {
+@media (min-width: 320px) and (max-width: 480px) {
     .heroText h3 {
         line-height: 1;
+        font-size: 2em;
     }
     .heroText {
         margin: 0;
@@ -67,6 +75,7 @@ section {
         position: absolute;
         top: 20vh;
         left: 10%;
+        margin-left: -30px;
     }
 }
 
@@ -156,6 +165,18 @@ nav {
 
 
 /* Portfolio */
+
+#portfolio {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #portfolio {
+        padding: 0;
+    }
+}
 
 .projectImg {
     width: 300px;
