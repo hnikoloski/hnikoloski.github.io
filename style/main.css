@@ -14,6 +14,43 @@ html {
     color: #fff;
 }
 
+
+/* To the top */
+
+#toTop {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: #252934;
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#toTop:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
 .sectionTitle {
     font-size: 40px;
     font-weight: 700;
@@ -122,6 +159,7 @@ nav {
     line-height: 0;
     width: 90px;
     height: auto;
+    padding: 5px 0;
 }
 
 
@@ -179,17 +217,31 @@ nav {
 }
 
 .projectImg {
-    width: 300px;
-    height: 175px;
-    margin: 10px 40px;
-    padding: 15px;
-    border: 0.5px solid rgba(51, 51, 51, 0.2);
+    /* width: 300px;
+    height: 175px; */
     border-radius: 5px;
+    border: 0.5px solid rgba(51, 51, 51, 0.2);
 }
 
-.projectImg:hover {
+.projectCard {
+    /* padding: 15px; */
+    border: 0.5px solid rgba(51, 51, 51, 0.2);
+    border-radius: 5px;
+    /* min-height: 200px;
+    max-height: 200px; */
+    min-width: 350px;
+    max-width: 350px;
+    margin: 10px 20px;
+    padding: 15px;
+}
+
+.projectCard:hover {
     /* background: rgba(4, 194, 201, 0.3); */
     box-shadow: 0px 0px 4px 0px rgba(4, 194, 201, 1);
+}
+
+.blockquote-footer {
+    font-size: 12px;
 }
 
 

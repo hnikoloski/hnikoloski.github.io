@@ -21,6 +21,7 @@
 </head>
 
 <body id="page-top">
+    <button onclick="topFunction()" id="toTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
     <div id="particles-js">
         <div class="heroText text-center">
             <h3 class="align-middle"> Hello, I'm <span class="magenta">Hristijan Nikoloski.</span></h3><br>
@@ -31,9 +32,7 @@
     <!-- NAV -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="logo">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <img src="imgs/logo.png" class="logoImg">
-            </a>
+            <img src="imgs/logo.png" class="logoImg" onclick="topFunction()">
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -133,18 +132,69 @@
         <div class="col-sm projectContainer">
 
             <div class="row mx-auto">
-                <a data-fancybox="gallery" href="imgs/projects/Project1.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail1.jpg"></a>
-                <a data-fancybox="gallery" href="imgs/projects/Project2.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail2.jpg"></a>
-                <a data-fancybox="gallery" href="imgs/projects/Project3.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail3.jpg"></a>
+                <div class="projectCard">
+                    <a data-fancybox="gallery" href="imgs/projects/Project1.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail1.jpg"></a>
+                    <br><br>
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0"><a href="http://www.theboilerinstallationco.co.uk/">TheBoilerInstallationCo.co.uk</a></p>
+                        <p class="blockquote-footer">HTML to Wordpress Website</p>
+                    </blockquote>
+                </div>
+                <div class="projectCard">
+                    <a data-fancybox="gallery" href="imgs/projects/Project2.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail2.jpg"></a>
+                    <br><br>
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0"><a href="http://insurancelama.ca">InsuranceLama.ca</a></p>
+                        <p class="blockquote-footer">Psd to Wordpress</p>
+                    </blockquote>
+                </div>
+                <div class="projectCard">
+                    <a data-fancybox="gallery" href="imgs/projects/Project3.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail3.jpg"></a>
+                    <br> <br>
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0"><a href="https://frutastic.net">Frutastic.net</a></p>
+                        <p class="blockquote-footer">Psd to Wordpress</p>
+                    </blockquote>
+                </div>
             </div>
             <div class="row mx-auto">
-                <a data-fancybox="gallery" href="imgs/projects/Project4.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail4.jpg"></a>
-                <a data-fancybox="gallery" href="imgs/projects/Project5.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail5.jpg"></a>
-                <a data-fancybox="gallery" href="imgs/projects/Project6.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail6.jpg"></a>
+                <div class="projectCard">
+                    <a data-fancybox="gallery" href="imgs/projects/Project4.png"><img class="projectImg" src="imgs/projects/thumbs/thubmnail4.jpg"></a>
+                    <br> <br>
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0"><a href="#">WoWBoosting.org</a></p>
+                        <p class="blockquote-footer">Opencart Website</p>
+                    </blockquote>
+                </div>
+                <div class="projectCard">
+                    <a data-fancybox="gallery" href="imgs/projects/Project5.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail5.jpg"></a>
+                    <br> <br>
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0"><a href="https://ffwdrail.com/">Ffwdrail.com</a></p>
+                        <p class="blockquote-footer">Wordpress Website</p>
+                    </blockquote>
+                </div>
+                <div class="projectCard">
+                    <a data-fancybox="gallery" href="imgs/projects/Project6.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail6.jpg"></a>
+                    <br> <br>
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0"><a href="http://spirographconsulting.co.uk">SpirographConsulting.co.uk</a></p>
+                        <p class="blockquote-footer">Simple Jquery/Html Website</p>
+                    </blockquote>
+                </div>
             </div>
             <div class="row mx-auto">
-                <a data-fancybox="gallery" href="imgs/projects/Project7.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail7.jpg"></a>
+                <div class="projectCard">
+                    <a data-fancybox="gallery" href="imgs/projects/Project7.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail7.jpg"></a>
+                    <br> <br>
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0"><a href="https://print4u.mk/">Print4U.mk In progress.</a></p>
+                        <p class="blockquote-footer">Wordpress Website with on site Design to print option</p>
+                    </blockquote>
+                </div>
+
             </div>
+        </div>
         </div>
 
 
