@@ -10,6 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x12" href="imgs/fav.png">
 
     <meta name="theme-color" content="#ffffff">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Hristijan Nikoloski - Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -110,10 +111,12 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm">
-                                    <img src="http://old.uacs.edu.mk/images/alumni_logo_malo.png" alt="">
+                                    <a href="http://uacs.edu.mk" target="_blank">
+                                    <img src="http://old.uacs.edu.mk/images/alumni_logo_malo.png" class="eduLogos" alt=""></a>
                                 </div>
                                 <div class="col-sm">
-                                    <img src="http://www.sedc.mk/wp-content/uploads/2016/05/logo.png" alt="">
+                                        <a href="http://sedc.mk" target="_blank">
+                                    <img src="http://www.sedc.mk/wp-content/uploads/2016/05/logo.png" class="eduLogos" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +136,7 @@
 
             <div class="row mx-auto">
                 <div class="projectCard">
-                    <a data-fancybox="gallery" href="imgs/projects/Project1.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail1.jpg"></a>
+                    <a data-fancybox="gallery1" href="imgs/projects/Project1.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail1.jpg"></a>
                     <br><br>
                     <blockquote class="blockquote text-center">
                         <p class="mb-0"><a href="http://www.theboilerinstallationco.co.uk/">TheBoilerInstallationCo.co.uk</a></p>
@@ -141,7 +144,7 @@
                     </blockquote>
                 </div>
                 <div class="projectCard">
-                    <a data-fancybox="gallery" href="imgs/projects/Project2.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail2.jpg"></a>
+                    <a data-fancybox="gallery2" href="imgs/projects/Project2.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail2.jpg"></a>
                     <br><br>
                     <blockquote class="blockquote text-center">
                         <p class="mb-0"><a href="http://insurancelama.ca">InsuranceLama.ca</a></p>
@@ -149,7 +152,7 @@
                     </blockquote>
                 </div>
                 <div class="projectCard">
-                    <a data-fancybox="gallery" href="imgs/projects/Project3.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail3.jpg"></a>
+                    <a data-fancybox="gallery3" href="imgs/projects/Project3.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail3.jpg"></a>
                     <br> <br>
                     <blockquote class="blockquote text-center">
                         <p class="mb-0"><a href="https://frutastic.net">Frutastic.net</a></p>
@@ -159,7 +162,7 @@
             </div>
             <div class="row mx-auto">
                 <div class="projectCard">
-                    <a data-fancybox="gallery" href="imgs/projects/Project4.png"><img class="projectImg" src="imgs/projects/thumbs/thubmnail4.jpg"></a>
+                    <a data-fancybox="gallery4" href="imgs/projects/Project4.png"><img class="projectImg" src="imgs/projects/thumbs/thubmnail4.jpg"></a>
                     <br> <br>
                     <blockquote class="blockquote text-center">
                         <p class="mb-0"><a href="#">WoWBoosting.org</a></p>
@@ -167,7 +170,7 @@
                     </blockquote>
                 </div>
                 <div class="projectCard">
-                    <a data-fancybox="gallery" href="imgs/projects/Project5.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail5.jpg"></a>
+                    <a data-fancybox="gallery5" href="imgs/projects/Project5.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail5.jpg"></a>
                     <br> <br>
                     <blockquote class="blockquote text-center">
                         <p class="mb-0"><a href="https://ffwdrail.com/">Ffwdrail.com</a></p>
@@ -175,7 +178,7 @@
                     </blockquote>
                 </div>
                 <div class="projectCard">
-                    <a data-fancybox="gallery" href="imgs/projects/Project6.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail6.jpg"></a>
+                    <a data-fancybox="gallery6" href="imgs/projects/Project6.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail6.jpg"></a>
                     <br> <br>
                     <blockquote class="blockquote text-center">
                         <p class="mb-0"><a href="http://spirographconsulting.co.uk">SpirographConsulting.co.uk</a></p>
@@ -185,7 +188,7 @@
             </div>
             <div class="row mx-auto">
                 <div class="projectCard">
-                    <a data-fancybox="gallery" href="imgs/projects/Project7.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail7.jpg"></a>
+                    <a data-fancybox="gallery7" href="imgs/projects/Project7.jpg"><img class="projectImg" src="imgs/projects/thumbs/thubmnail7.jpg"></a>
                     <br> <br>
                     <blockquote class="blockquote text-center">
                         <p class="mb-0"><a href="https://print4u.mk/">Print4U.mk In progress.</a></p>
@@ -213,14 +216,18 @@
                     </ul>
                 </div>
                 <div class="col-sm">
+                    
                     <form id="contactForm">
-                        <input type="text" placeholder="Name" required id="name">
-                        <input type="email" placeholder="Email" required id="email">
-                        <textarea placeholder="Your Message" type="text" name="message" required id="message"></textarea><br>
-                        <button class="button" type="submit" id="submit" value="SUBMIT">Submit</button>
+                        <input type="text" name="name" id="name" required placeholder="Name">
+                        <input type="email" name="email" id="email" required placeholder="Email">
+                        <textarea name="message" rows="4" id="message" placeholder="Your Message"></textarea><br>
+                        <button class="button btnSubmit" type="submit" id="submit" value="SUBMIT">Submit</button>
+                        <div class="g-recaptcha" data-sitekey="6Lenw7MUAAAAAFcEBhckuSIaozXV81lT-KZ4AIEZ"></div>
                     </form>
-                </div>
+                    <div class="alert">Your message has been sent</div>
 
+                </div>
+                
             </div>
         </div>
     </section>
@@ -261,6 +268,8 @@
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+
+    
 
     <script src="scripts/contact.js"></script>
     <script src="scripts/style.js "></script>

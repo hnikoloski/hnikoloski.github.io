@@ -1,47 +1,62 @@
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-      apiKey: "AIzaSyAamk2SxUGGiCjrkSy-8ocIzuzwUIrb0V4",
-      authDomain: "contactform-d32c0.firebaseapp.com",
-      databaseURL: "https://contactform-d32c0.firebaseio.com",
-      projectId: "contactform-d32c0",
-      storageBucket: "",
-      messagingSenderId: "484602543552",
-      appId: "1:484602543552:web:8da58d6efa69b813"
+
+//   ==================================================
+// Initialize Firebase
+var config = {
+    apiKey: "AIzaSyAamk2SxUGGiCjrkSy-8ocIzuzwUIrb0V4",
+    authDomain: "contactform-d32c0.firebaseapp.com",
+    databaseURL: "https://contactform-d32c0.firebaseio.com",
+    projectId: "contactform-d32c0",
+    storageBucket: "",
+    messagingSenderId: "484602543552",
+    appId: "1:484602543552:web:8da58d6efa69b813"
   };
-
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-
-  let messagesRef = firebase.database().ref('messages');
-
-
-  // Form submit
+  firebase.initializeApp(config);
+  var database = firebase.database();
+ 
+  
+  // Reference messages collection
+  var messagesRef = firebase.database().ref('messages');
+  
+  // Listen for form submit
   document.getElementById('contactForm').addEventListener('submit', submitForm);
-  // Submit Form
-  function submitForm(e) {
-      e.preventDefault();
-      // Get vals
-      let name = getInputVal('name');
-      let email = getInputVal('email');
-      let message = getInputVal('message');
-      // Save Msg
-      saveMessage(name, email, message);
-
-
+  
+  // Submit form
+  function submitForm(e){
+    e.preventDefault();
+  
+    // Get values
+    var name = getInputVal('name');
+    var email = getInputVal('email');
+    var message = getInputVal('message');
+  
+    // Save message
+    saveMessage(name, company, email, phone, message);
+  
+    // Show alert
+    document.querySelector('.alert').style.display = 'block';
+  
+    // Hide alert after 3 seconds
+    setTimeout(function(){
+      document.querySelector('.alert').style.display = 'none';
+    },3000);
+  
+    // Clear form
+    document.getElementById('contactForm').reset();
   }
-
-  // Get form value
-  function getInputVal(id) {
-      return document.getElementById(id).value;
+  
+  // Function to get get form values
+  function getInputVal(id){
+    return document.getElementById(id).value;
   }
-
-
-  //   Save MSG to firebase
-  function saveMessage(name, email, message) {
-      let newMessageRef = messagesRef.push();
-      newMessageRef.set({
-          name: name,
-          email: email,
-          message: message
-      });
+  
+  // Save message to firebase
+  function saveMessage(name, company, email, phone, message){
+    var newMessageRef = messagesRef.push();
+    newMessageRef.set({
+      name: name,
+      company:company,
+      email:email,
+      phone:phone,
+      message:message
+    });
   }

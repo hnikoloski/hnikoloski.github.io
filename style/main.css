@@ -189,9 +189,10 @@ nav {
     max-height: 60px;
 }
 
-.skillLogos:hover {
+.skillLogos:hover, .eduLogos:hover {
     transform: scale(1.1);
     transition: all ease-in-out 300ms;
+    cursor: pointer;
 }
 
 
@@ -297,8 +298,14 @@ nav {
     border-color: #04C2C9;
 }
 
+
 #contact form .button:active {
     transform: scale(0.5)
+}
+.alert{
+    display: none;
+    color: #fff;
+    width: 50%;
 }
 
 
