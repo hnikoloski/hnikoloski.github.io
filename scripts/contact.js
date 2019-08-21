@@ -2,7 +2,7 @@
 // Initialize Firebase
 
 // Your web app's Firebase configuration
-var firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyAamk2SxUGGiCjrkSy-8ocIzuzwUIrb0V4",
     authDomain: "contactform-d32c0.firebaseapp.com",
     databaseURL: "https://contactform-d32c0.firebaseio.com",
