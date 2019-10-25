@@ -38,7 +38,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#about">About</a>
@@ -62,8 +62,8 @@
                 <div class="col-sm">
                     <div class="imgFrame text-center">
                         <img loading="lazy" src="imgs/profile.jpg">
-                        <p class="lead">Hello, my name is Hristijan Nikoloski.<br> I am confident and highly motivated Web Developer, who is always intrigued by a challenge. Eager to work in a highly motivated team environment. Always fascinated by cutting edge technologies
-                            and hungry for knowledge.
+                        <p class="lead bio">Hello, my name is Hristijan Nikoloski.<br> I am confident and highly motivated Web Developer, who is always intrigued by a challenge. Eager to work in a highly motivated team environment. Always fascinated by cutting edge technologies
+                            and hungry for knowledge. <br>My so far experience has been working as a freelancer with mostly wordpress projects.
                         </p>
                     </div>
                 </div>
@@ -109,10 +109,10 @@
                         <h3 style="margin-bottom: 20px;">Education:</h3>
                         <div class="container">
                             <div class="row">
-                                <div class="col-sm">
+                                <!-- <div class="col-sm">
                                     <a href="http://uacs.edu.mk" target="_blank">
                                         <img loading="lazy" src="http://old.uacs.edu.mk/images/alumni_logo_malo.png" class="eduLogos" alt=""></a>
-                                </div>
+                                </div> -->
                                 <div class="col-sm">
                                     <a href="http://sedc.mk" target="_blank">
                                         <img loading="lazy" src="http://www.sedc.mk/wp-content/uploads/2016/05/logo.png" class="eduLogos" alt=""></a>
@@ -224,17 +224,30 @@
                         </ul>
                     </div>
                 </div>
-                <!-- <div class="col-sm">
-
-                    <form id="contactForm">
-                        <input type="text" name="name" id="name" required placeholder="Name">
-                        <input type="email" name="email" id="email" required placeholder="Email">
+                <div class="col-sm">
+                    <form id="contactForm" action="https://formspree.io/mlernedd" method="POST">
+                        <div class="row">
+                            <div class="col paddingRight">
+                                <input type="text" name="name" id="name" required placeholder="First Name">
+                            </div>
+                            <div class="col paddingLeft">
+                                <input type="text" name="lastName" id="last-name" required placeholder="Last Name">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col contactFormCol paddingRight">
+                                <input type="email" name="email _replyto" id="email" required placeholder="Email">
+                            </div>
+                            <div class="col contactFormCol paddingLeft">
+                                <input type="text" name="subject" id="subject" required placeholder="Subject">
+                            </div>
+                        </div>
                         <textarea name="message" rows="4" id="message" placeholder="Your Message"></textarea><br>
                         <button class="button btnSubmit" type="submit" id="submit" value="SUBMIT">Submit</button>
                     </form>
                     <div class="alert">Your message has been sent</div>
 
-                </div> -->
+                </div>
 
             </div>
         </div>
@@ -269,9 +282,9 @@
 
     </footer>
 
-    <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js "></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 

@@ -86,6 +86,15 @@ section {
     #particles-js {
         width: 100%;
     }
+    #navbarSupportedContent ul li {
+        display: inline-block!important;
+        padding-bottom: 10px;
+    }
+    #navbarSupportedContent ul li a {
+        padding: 15px 0;
+        margin-left: 20%;
+        display: inline-block!important;
+    }
 }
 
 .heroText {
@@ -174,6 +183,13 @@ nav {
     height: auto;
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(40% at 50% 50%);
+}
+
+
+/* Bio */
+
+.bio {
+    font-size: 1.1em;
 }
 
 
@@ -290,6 +306,14 @@ nav {
     font-size: 12pt;
     margin-bottom: 3px;
     color: #fff;
+}
+
+.paddingRight {
+    padding-right: 2px!important;
+}
+
+.paddingLeft {
+    padding-left: 2px!important;
 }
 
 #contact form .button {
