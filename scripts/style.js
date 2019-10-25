@@ -1,6 +1,14 @@
+// Preloader
+window.addEventListener("load", function() {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+
 particlesJS.load('particles-js', 'particles.json', function() {
     console.log('particles.json loaded...');
 });
+
+
 
 // Check Scrolled Nav bar
 function checkScroll() {
