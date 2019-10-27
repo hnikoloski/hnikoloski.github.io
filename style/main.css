@@ -14,6 +14,17 @@ html {
     color: #fff;
 }
 
+::-webkit-scrollbar {
+    background: #1B242F;
+    width: 15px;
+    /* border-left: 0.1px solid #BA1E60; */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #BA1E60;
+    background-size: 10px;
+}
+
 
 /* Preloader */
 
