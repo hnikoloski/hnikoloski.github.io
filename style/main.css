@@ -34,6 +34,10 @@ html {
     width: 70vh;
 }
 
+.loader h3 {
+    text-align: center;
+}
+
 .loader.hidden {
     animation: fadeOut 1300ms;
     animation-fill-mode: forwards;
