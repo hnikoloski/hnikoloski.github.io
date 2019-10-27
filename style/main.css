@@ -22,7 +22,10 @@ html {
 
 ::-webkit-scrollbar-thumb {
     background: #BA1E60;
-    background-size: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: inset 0px 0px 11px -4px black;
 }
 
 
