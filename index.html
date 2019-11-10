@@ -326,13 +326,36 @@
             <hr class="divider my-4" style="color: #fff; border-color: #fff;"> <br>
             <div class="row">
                 <div class="col">
-                    <!-- <p class="d-flex justify-content-center">Feel Free to contact me at any time</p> -->
-                    <div class="d-flex justify-content-center">
-                        <ul>
-                            <li><a href="https://pph.me/hnikoloski"> PeoplePerHour</a></li>
-                            <!-- <li><a href="https://www.upwork.com/o/profiles/users/_~01d1e77792003b2904/"> UpWork</a></li> -->
-                            <li><a href="mailto:hnikoloski@outlook.com">hnikoloski@outlook.com</a></li>
-                        </ul>
+                    <div class="row">
+                        <!-- <p class="d-flex justify-content-center">Feel Free to contact me at any time</p> -->
+                        <div class="d-flex justify-content-center">
+                            <ul>
+                                <li><a href="https://pph.me/hnikoloski"> PeoplePerHour</a></li>
+                                <!-- <li><a href="https://www.upwork.com/o/profiles/users/_~01d1e77792003b2904/"> UpWork</a></li> -->
+                                <li><a href="mailto:hnikoloski@outlook.com">hnikoloski@outlook.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <!-- PPH Widget -->
+                        <div id="pph-hireme"></div>
+                        <script type="text/javascript">
+                            (function(d, s) {
+                                var useSSL = 'https:' == document.location.protocol;
+                                var js, where = d.getElementsByTagName(s)[0],
+                                    js = d.createElement(s);
+                                js.src = (useSSL ? 'https:' : 'http:') + '//www.peopleperhour.com/hire/2671179962/2123803.js?width=336&height=142&orientation=vertical&theme=dark&rnd=' + parseInt(Math.random() * 10000, 10);
+                                try {
+                                    where.parentNode.insertBefore(js, where);
+                                } catch (e) {
+                                    if (typeof console !== 'undefined' && console.log && e.stack) {
+                                        console.log(e.stack);
+                                    }
+                                }
+                            }(document, 'script'));
+                        </script>
+
                     </div>
                 </div>
                 <div class="col-sm">
