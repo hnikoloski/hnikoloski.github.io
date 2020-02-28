@@ -478,16 +478,16 @@ nav {
     max-width: 350px;
     margin: 10px 20px;
     padding: 15px;
-    transition: transform 0.5s;
-    /* transition: box-shadow 0.55s; */
+    box-shadow:0px 0px 5px -3px #666;
+    transition: all 0.3s ease-in-out;
 }
 
 .projectCard:hover {
     /* background: #ededed; */
     /* background: rgba(4, 194, 201, 0.3); */
     transform: scale(1.05);
-    box-shadow: 0px 15px 25px -9px #000;
-    transition: box-shadow 0.3s ease-in-out;
+    box-shadow:0 30px 10px -10px #666;
+    border:1px solid #e0e0e0;
 }
 
 .projectLink:hover {
