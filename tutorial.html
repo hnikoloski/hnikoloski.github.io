@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .card:hover {
+            box-shadow: 0 30px 10px -10px #666;
+            border: 1px solid #e0e0e0;
+            transform: scale(1.05);
+            transition: ease-in-out 500ms;
+            cursor: pointer;
+        }
+
+        #versionOneTutorial {
+            /* text-align: center; */
+            padding: 1% 5%;
+            display: none;
+        }
+
+
+
+        #myBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 20px;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: #7c7b7b80;
+            /* Set a background color */
+            color: white;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+
+        #myBtn:hover {
+            background-color: #555;
+            /* Add a dark-grey background on hover */
+        }
+        .zoom:Hover{
+            transform: scale(1.5);
+            transition: ease-in-out 500ms;
+        }
+    
+    </style>
+
+
+
+    <div class="container">
+        <h1>Shop Tutorial</h1>
+        <div class="row">
+            <div class="col-6">
+                <h2>Verzija 1</h2>
+
+                <div class="card rounded mx-auto d-block" style="width: 18rem;" id="verzijaEden">
+                    <img class="card-img-top" src="assets/Screenshot_1.jpg">
+                </div>
+            </div>
+            <div class="col-6">
+                <h2>Verzija 2</h2>
+                <div class="card rounded mx-auto d-block" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/Screenshot_2.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <section id="versionOneTutorial">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Naslov i link za produktot</h5>
+                        <ol>
+                            <li>Se logiras na stranata</li>
+                            <li>od ko ke se logiras od desno Imas <strong>Ae Templates</strong> i
+                                <strong>Products</strong>, Gi otvaras vo posebni taboj </li>
+                            <li>Vo product tabot: So gluvceto odis na eder proizvod i Ke ti se pojavat poveke linkovi.
+                                Klikas Duplicate</li>
+                            <li>Od kako se se duplira proizvodot ti go otvara avtomatski dupliraniot proizvod. Tuka go
+                                vnesuvas Naslovot najgore I vednas pod naslovot imas pole <em>Permalink</em>. Od desnata
+                                strana na permalink Ima <em>Edit</em> I tuka go vnesuvas naslovot od proizvodot pa
+                                klikas Ok</li>
+                        </ol>
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/naslov.jpg" class="img-fluid zoom">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Glavna slika i galerija za produktot i kategorija</h5>
+                        <ol>
+                            <li>Od desnata strana na prozorecot se site settings za Glavnata slika i galerijata za
+                                proizvodot (redosledot na kockite za kategorija, galerija, slika itn mozi da se
+                                razlicni)</li>
+                            <li>Ako ima potreba odbiras kategorija za proizvodot ako ne ostaj go kako sho si e </li>
+                            <li>Za da ja menis glavnata slika na produktot ja klikas slikata na Product Image I ja
+                                dodavas novata (mozi so drag and drop da ja uploadiras novata slika)</li>
+                            <li>Za da gi menis slikite od galerija: Kaj kockata so naslov Product Gallery ke vidis
+                                poveke sliki tuka. <strong>Prvo e bitno</strong> da gi izbrisis tie sliki. Slikite se
+                                briset koga ke odis so gluvceto na nekoja od slikite vo desniot kjos ima X. Na sekoja
+                                slika go klikas X. Pa potoa klikas Add product gallery images. Isto kako za glavnata
+                                slika mozes so drag and drop site sliki naednas da gi uploadiras </li>
+                        </ol>
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/kategorijaGalerijaImage.jpg" class="img-fluid zoom" style="height: 400px;">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Template, Long Description / Short Description</h5>
+                        <ol>
+                            <li> <b>Go kopiras brojceto sho se naogat vo URLto I zacuvaj go negde privremeno (ova se koristi posle vo template za add to cart dugminjata) </b></li>
+                            <li>Sega odis vo tabot koj predhodno go otvori od AE templates klikas duplicate na Short Description I na Long Description (ke ti trebaat dvata)</li>
+                            <li>Od kako ke se dupliraat go kopiras kodot shto se naogja vo Poleto ShortCode. </li>
+                            <li>Se vrakame vo tabot od proizvodot shto go dodavame I kodot od Long Description Go stavas vo prviot Text Editor. Potoa najdolu skrolas na stranata od produktot I tamu ima vtor Text editor i tuka go stavas kodot od Short description </li>
+                            <li>Od kako ke gi namestis shortkodojte od desna strana na produktot Klikas Publish ili Update</li>
+                            <li>Se vrakas sega vo AE Templates tabot i odis so gluvceto na nekoj od novite templati i klikas Edit with Elementor primer na Long Description. </li>
+                            <li>Istiot link sho go stade na predhodnoto dugme go stavas na site dugminja sho se naoget na templateot</li>
+
+                            <li> Od kako ke zavrsis dolu desno imas da stegnis Publish ili update. Zeleno dugme e</li>
+                        </ol>
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/templateBroj.jpg" id="tojBrojot" class="img-fluid zoom">
+                        <hr>
+                       
+                        <img src="assets/templateDuplicate.jpg" class="img-fluid zoom">
+                        <hr>
+                        <img src="assets/longDescrPole.jpg" class="img-fluid zoom">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col-6">
+                        <h5>Long Description / Short Description edit with Elementor</h5>
+                        <ol>
+                            <li>od kako ke otvoris template za Edit (edit with elementor)</li>
+                            <li>Vo desniot kjos najdolu imas settings tuka klikas i Go menvis naslovot na Templateot(ova e za vo idnina da ne ti se meset templatite) isto i Status menvis vo published</li><span style="font-size: 100px;">&dArr;</span><span style="font-size: 100px;">&dArr;</span><span style="font-size: 100px;">&dArr;</span><span style="font-size: 100px;">&dArr;</span><span style="font-size: 100px;">&dArr;</span><span style="font-size: 100px;">&dArr;</span><br><br><br><br><br><br><br><br>
+                            <li>Od kako ke go menis statusot klikas na nekoj element od desno sho sakas da go menis primer tekst. Tekstot sekogas go menuvas od editorot za fontot i drugi style opcii da ostanat isti.</li> <span style="font-size: 100px;">&dArr;</span> <span style="font-size: 100px;">&dArr;</span> <span style="font-size: 100px;">&dArr;</span> <span style="font-size: 100px;">&dArr;</span> <span style="font-size: 100px;">&dArr;</span> <br><br><br> <br> <br>
+                            <li>Dugminjata na templatetot e edna od najbitnite raboti da se menit. Od kako ke kliknis na nekoe od dugminjata od levo ke imas pole Link: linkot e imeto od stranata i na krajot od linkot ima Broj. Toj broj go menvis so predhodno brojot sho go zacuva od produkt URL (<a href="#tojBrojot">Klikni ovde za koj broj</a>)</li>
+                            
+
+                        </ol>
+                    </div>
+                    <div class="col-6">
+                        <img src="assets/elementorSettings.jpg" class="img-fluid zoom">
+                        <img src="assets/naslovIPublish.jpg" class="img-fluid zoom"><hr><br><hr>
+                        <img src="assets/textEditorElementor.jpg" class="img-fluid zoom" style="height: 250px;"><hr><br><hr>
+                        <img src="assets/brojotZacuvan.jpg" class="img-fluid zoom">
+                      
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <hr>
+    </section>
+
+
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+        $(document).ready(function(){
+    $("#verzijaEden").click(function(){
+      $("#versionOneTutorial").show("slow");
+    });
+
+    $("#verzijaDva").click(function(){
+        $("#versionTwoTutorial").show("slow");
+      });
+
+  });
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="main.js"></script> -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
