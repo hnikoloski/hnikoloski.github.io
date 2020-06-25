@@ -487,9 +487,11 @@ nav {
 .projectCard:hover {
     /* background: #ededed; */
     /* background: rgba(4, 194, 201, 0.3); */
-    transform: scale(1.05);
+    transform: scale(1.05)!important;
     box-shadow:0 30px 10px -10px #666;
     border:1px solid #e0e0e0;
+    transition: all 0.3s ease-in-out;
+
 }
 
 .projectLink:hover {
