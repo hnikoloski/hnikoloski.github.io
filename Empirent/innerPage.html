@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/libs/slick/slick.css"
+    />
+
+    <link rel="stylesheet" href="./assets/libs/bootstrap/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/libs/bootstrapDatePicker/bootstrap-datepicker.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Empirent</title>
+  </head>
+  <body>
+    <main class="appartment">
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="col-6 text-left">
+          <div class="logo-wrapper">
+            <a href="#">
+              <img src="./assets/imgs/logo.svg" alt="logo" />
+            </a>
+          </div>
+        </div>
+        <div class="col-6 text-right text-uppercase">
+          <ul class="list-inline">
+            <li class="list-inline-item user-login">
+              <a href="#!">
+                <ul class="list-inline">
+                  <li class="list-inline-item"><h4>my empirent</h4></li>
+                  <li class="list-inline-item">
+                    <img src="./assets/imgs/icons/user.svg" />
+                  </li></ul
+              ></a>
+            </li>
+            <li class="list-inline-item menu">
+              <a
+                data-toggle="slide-collapse"
+                href="#menuWindow"
+                role="button"
+                aria-expanded="false"
+                aria-controls="menuWindow"
+              >
+                <ul class="list-inline menuToggler">
+                  <li class="list-inline-item"><h4>Menu</h4></li>
+                  <li class="list-inline-item">
+                    <div id="nav-icon">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </li>
+                </ul>
+              </a>
+              <div class="collapse" id="menuWindow">
+                <div class="card card-body">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">
+                      <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="list-inline-item active">
+                      <a class="nav-link" href="./innerPage.html">Apartmány</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="nav-link" href="#">Rezidence</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="nav-link" href="#">Společnost</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="nav-link" href="#">Služby</a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="nav-link" href="#">Kontakt</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <aside>
+        <div class="contact-form-wrapper">
+          <ul class="nav nav-tabs" id="formTabber" role="tablist">
+            <li class="nav-item active">
+              <a
+                class="nav-link active"
+                id="longTermTab"
+                data-toggle="tab"
+                href="#longTermContent"
+                role="tab"
+                aria-controls="longTermContent"
+                aria-selected="false"
+                >Long term</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="shortTermTab"
+                data-toggle="tab"
+                href="#shortTermTabContent"
+                role="tab"
+                aria-controls="shortTermTabContent"
+                aria-selected="false"
+                >Short Term</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                id="buyTab"
+                data-toggle="tab"
+                href="#buyTab"
+                role="tab"
+                aria-controls="buyTab"
+                aria-selected="false"
+                >I want to Buy</a
+              >
+            </li>
+          </ul>
+          <div class="tab-content" id="formTabContent">
+            <div
+              class="tab-pane container fade show active"
+              id="longTermContent"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+            >
+              <form>
+                <h4 class="text-center">Book this Apartment</h4>
+                <div class="form-group">
+                  <label for="formFullName">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="formFullName"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="formEmail">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="formEmail"
+                    placeholder="email@example.com"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="formMessage">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="formMessage"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <h3 class="price">
+                  550 &euro;/ <span class="term">month</span>
+                </h3>
+                <button type="submit" class="submitForm">Book Now</button>
+              </form>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="shortTermTabContent"
+              role="tabpanel"
+              aria-labelledby="shortTermTabContent"
+            >
+              ...
+            </div>
+          </div>
+        </div>
+        <div class="badge-wrapper">
+          <div class="img-wrapper">
+            <img src="./assets/imgs/icons/premiumBadge.svg" />
+          </div>
+          <div class="badge-text">
+            <p>This apartment is suitable for the</p>
+            <p>Premium Lease Program</p>
+            <a href="#!" class="gradientBtn"
+              >Learn More <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="download-cta-wrapper">
+          <div class="cta-box">
+            <p class="text-right">
+              For the best user experience with our apartments download now the
+              <span class="underline white"> MyEmpirent APP</span> and discover
+              a total new way to live your new home in Prague
+            </p>
+            <a href="#!"
+              ><img
+                src="./assets/imgs/AppStoreLogo.svg"
+                alt="App Store Apple logo"
+            /></a>
+            <a href="#!"
+              ><img
+                src="./assets/imgs/GooglePlayBtn.svg"
+                alt="Google Play Logo"
+            /></a>
+          </div>
+        </div>
+      </aside>
+      <div
+        class="container-fluid hero"
+        style="background-image: url(./assets/imgs/appartmentBg.svg);"
+      >
+        <div class="row appartmentContent">
+          <div class="container cContainer">
+            <div class="row">
+              <div class="col-md-10">
+                <div class="appartmentText">
+                  <h2>
+                    1 Bedroom Apartment -
+                  </h2>
+                  <h5>KŘIŽÍKOVA 71, PRAHA 8, KARLÍN</h5>
+                  <ul class="list-group apartmentinfo">
+                    <li class="list-group-item">Fully equipped apartments</li>
+                    <li class="list-group-item">
+                      Rental contract for one year period, with option to extend
+                    </li>
+                    <li class="list-group-item">Termination 2 month policy</li>
+                    <li class="list-group-item">2 month safety deposit</li>
+                    <li class="list-group-item">Cleaning can be arranged</li>
+                  </ul>
+                  <h6>Floor: <span class="floorNum"> 1</span></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container cContainer toolbar">
+          <div class="row">
+            <div class="col-md-5 p-0">
+              <a href="#" class="galleryBtn">
+                View Gallery <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="col-md-4 p-0">
+              <a href="#" class="socialBtns"
+                >View Gallery <i class="ci-share"></i>
+              </a>
+              <a href="#" class="socialBtns">
+                Add to Favorites <i class="far fa-heart"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="container cContainer appartmentBasic">
+        <div class="row">
+          <div class="col-3"><h3 class="sectionTitle">Basic</h3></div>
+          <div class="col-3">
+            <div class="basic-wrapper">
+              <div class="img-wrapper">
+                <img src="./assets/imgs/icons/bedIcon.svg" />
+              </div>
+              <h5>Bedroom 1</h5>
+              <p>1 Queen bed</p>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="basic-wrapper">
+              <div class="img-wrapper">
+                <img src="./assets/imgs/icons/sofaIcon.svg" />
+              </div>
+              <h5>Common space</h5>
+              <p>1 Sofa bed</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container cContainer accesories">
+        <div class="row">
+          <div class="col-3"><h3 class="sectionTitle">Accesories</h3></div>
+          <div class="col-8">
+            <div class="allAccesories">
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/wifi.svg" />
+                </div>
+                <h5>Wireles Internet</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/acUnit.svg" />
+                </div>
+                <h5>Air-Conditioning</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/essentials.svg" />
+                </div>
+                <h5>Essentials</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/wifi.svg" />
+                </div>
+                <h5>Wireles Internet</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/acUnit.svg" />
+                </div>
+                <h5>Air-Conditioning</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/essentials.svg" />
+                </div>
+                <h5>Essentials</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/wifi.svg" />
+                </div>
+                <h5>Wireles Internet</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/acUnit.svg" />
+                </div>
+                <h5>Air-Conditioning</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/essentials.svg" />
+                </div>
+                <h5>Essentials</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/wifi.svg" />
+                </div>
+                <h5>Wireles Internet</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/acUnit.svg" />
+                </div>
+                <h5>Air-Conditioning</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/essentials.svg" />
+                </div>
+                <h5>Essentials</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/wifi.svg" />
+                </div>
+                <h5>Wireles Internet</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/acUnit.svg" />
+                </div>
+                <h5>Air-Conditioning</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/essentials.svg" />
+                </div>
+                <h5>Essentials</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/wifi.svg" />
+                </div>
+                <h5>Wireles Internet</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/acUnit.svg" />
+                </div>
+                <h5>Air-Conditioning</h5>
+              </div>
+              <div class="accesories-wrapper">
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/icons/essentials.svg" />
+                </div>
+                <h5>Essentials</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container cContainer extraServices">
+        <div class="row">
+          <div class="col-3"><h3 class="sectionTitle">Extra Services</h3></div>
+          <div class="col-8">
+            <div class="allServices">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <input
+                    class="styled-checkbox"
+                    id="styled-checkbox-1"
+                    type="checkbox"
+                    value="value1"
+                    onclick="return false;"
+                  />
+                  <label for="styled-checkbox-1">Cleaning</label>
+                </li>
+                <li class="list-inline-item">
+                  <input
+                    class="styled-checkbox"
+                    id="styled-checkbox-2"
+                    type="checkbox"
+                    value="value2"
+                    checked
+                    onclick="return false;"
+                  />
+                  <label for="styled-checkbox-2">Administration</label>
+                </li>
+                <li class="list-inline-item">
+                  <input
+                    class="styled-checkbox"
+                    id="styled-checkbox-3"
+                    type="checkbox"
+                    value="value3"
+                    onclick="return false;"
+                  />
+                  <label for="styled-checkbox-3">Concierge</label>
+                </li>
+                <li class="list-inline-item">
+                  <input
+                    class="styled-checkbox"
+                    id="styled-checkbox-4"
+                    type="checkbox"
+                    value="value4"
+                    onclick="return false;"
+                    checked
+                  />
+                  <label for="styled-checkbox-4">Packages</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container cContainer virtualTour">
+        <div class="row">
+          <div class="col-3">
+            <h3 class="sectionTitle">Virtual Tours</h3>
+          </div>
+          <div class="col-8">
+            <div class="tab-content" id="allTabs">
+              <div
+                class="tab-pane fade show active"
+                id="balconyTabContent"
+                role="tabpanel"
+                aria-labelledby="balconyTabContent"
+              >
+                <button>
+                  <img src="./assets/imgs/icons/expandIcon.svg" />
+                </button>
+                <div class="img-wrapper">
+                  <img src="./assets/imgs/virtualtourPreview.svg" alt="" />
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="kitchenTabContent"
+                role="tabpanel"
+                aria-labelledby="kitchenTabContent"
+              >
+                ...
+              </div>
+              <div
+                class="tab-pane fade"
+                id="contact"
+                role="tabpanel"
+                aria-labelledby="contact-tab"
+              >
+                ...
+              </div>
+            </div>
+            <ul class="nav nav-tabs" id="virtualTours" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="balconyTabBtn"
+                  data-toggle="tab"
+                  href="#balconyTabContent"
+                  role="tab"
+                  aria-controls="balconyTabContent"
+                  aria-selected="true"
+                >
+                  <div class="img-wrapper">
+                    <img src="./assets/imgs/tabVirtual.svg" />
+                  </div>
+                  <h5>Balcony</h5>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="kitchenTabBtn"
+                  data-toggle="tab"
+                  href="#kitchenTabContent"
+                  role="tab"
+                  aria-controls="kitchenTabContent"
+                  aria-selected="true"
+                >
+                  <div class="img-wrapper">
+                    <img src="./assets/imgs/tabVirtual.svg" />
+                  </div>
+                  <h5>Kitchen</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="livingRoomTabBtn"
+                  data-toggle="tab"
+                  href="#livingRoomTabContent"
+                  role="tab"
+                  aria-controls="livingRoomTabContent"
+                  aria-selected="true"
+                >
+                  <div class="img-wrapper">
+                    <img src="./assets/imgs/tabVirtual.svg" />
+                  </div>
+                  <h5>Living Room</h5>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="bathroomTabBtn"
+                  data-toggle="tab"
+                  href="#bathroomTabContent"
+                  role="tab"
+                  aria-controls="bathroomTabContent"
+                  aria-selected="true"
+                >
+                  <div class="img-wrapper">
+                    <img src="./assets/imgs/tabVirtual.svg" />
+                  </div>
+                  <h5>Bathroom</h5>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="container cContainer importantInfo">
+        <div class="row">
+          <div class="col-3">
+            <h3 class="sectionTitle">Important</h3>
+          </div>
+          <div class="col-8">
+            <ul>
+              <li>
+                <p>
+                  <strong>
+                    Please note, Empirent does not accept CASH deposit. Must be
+                    on a debit or credit card.
+                  </strong>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>
+                    Deposit: €100 per room.
+                  </strong>
+                  Ex. Two-bedroom Apartment is €200 deposit.
+                </p>
+              </li>
+              <li>
+                <p>
+                  If the accommodation does not provide parking you can find the
+                  nearest parking at
+                  <a href="//www.mrparkit.com" target="_blank"
+                    >www.mrparkit.com</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>
+                    Towels are changed every 3rd day.
+                  </strong>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>
+                    Bed linen is changed every 6th day.
+                  </strong>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Please note the
+                  <strong>room amount displayed in EUR </strong> is an estimate,
+                  you will pay in CZK according to the fixed Exchange rate 26,2.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Flexible rate is <strong>charged 48 hours prior</strong> to
+                  arrival
+                </p>
+              </li>
+              <li>
+                <p>
+                  <strong>Non-refundable rate is charged immediately</strong>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="container cContainer floorPlan">
+        <div class="row">
+          <div class="col-3">
+            <h3 class="sectionTitle">Floor Plan</h3>
+          </div>
+          <div class="col-8">
+            <div class="floorImg-wrapper">
+              <button data-fancybox-trigger="floorplan">
+                <img src="./assets/imgs/icons/expandIcon.svg" />
+              </button>
+              <a
+                data-fancybox="floorplan"
+                class="fancybox"
+                href="./assets/imgs/floorPlanImg.png"
+                ><img
+                  loading="lazy"
+                  class="floorPlanImg"
+                  src="./assets/imgs/floorPlanImg.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid fullGallery">
+        <div class="row">
+          <div class="container cContainer">
+            <div class="row">
+              <div class="col-3">
+                <h3 class="sectionTitle">Full Galery</h3>
+              </div>
+              <div class="col-9">
+                <div class="galleryBtns-wrapper">
+                  <button class="prevSlide">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <span class="totalGalleryImgs">13</span>
+                  <button class="nextSlide">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <hr />
+          </div>
+          <div class="col-12 slider">
+            <div class="fullGallerySlider">
+              <div class="singleSlideGalery">
+                <a
+                  data-fancybox="sliderGalery"
+                  class="fancybox"
+                  href="http://via.placeholder.com/1500x500"
+                  ><img
+                    loading="lazy"
+                    class="floorPlanImg"
+                    src="./assets/imgs/galleryImg.svg"
+                /></a>
+              </div>
+              <div class="singleSlideGalery">
+                <a
+                  data-fancybox="sliderGalery"
+                  class="fancybox"
+                  href="http://via.placeholder.com/1500x500"
+                  ><img
+                    loading="lazy"
+                    class="floorPlanImg"
+                    src="./assets/imgs/galleryImg.svg"
+                /></a>
+              </div>
+              <div class="singleSlideGalery">
+                <a
+                  data-fancybox="sliderGalery"
+                  class="fancybox"
+                  href="http://via.placeholder.com/1500x500"
+                  ><img
+                    loading="lazy"
+                    class="floorPlanImg"
+                    src="./assets/imgs/galleryImg.svg"
+                /></a>
+              </div>
+              <div class="singleSlideGalery">
+                <a
+                  data-fancybox="sliderGalery"
+                  class="fancybox"
+                  href="http://via.placeholder.com/1500x500"
+                  ><img
+                    loading="lazy"
+                    class="floorPlanImg"
+                    src="./assets/imgs/galleryImg.svg"
+                /></a>
+              </div>
+              <div class="singleSlideGalery">
+                <a
+                  data-fancybox="sliderGalery"
+                  class="fancybox"
+                  href="http://via.placeholder.com/1500x500"
+                  ><img
+                    loading="lazy"
+                    class="floorPlanImg"
+                    src="./assets/imgs/galleryImg.svg"
+                /></a>
+              </div>
+              <div class="singleSlideGalery">
+                <a
+                  data-fancybox="sliderGalery"
+                  class="fancybox"
+                  href="http://via.placeholder.com/1500x500"
+                  ><img
+                    loading="lazy"
+                    class="floorPlanImg"
+                    src="./assets/imgs/galleryImg.svg"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container shareThis">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="sectionTitle text-center">Share this place</h3>
+            <hr />
+            <div class="socialIcons-wrapper">
+              <div class="icon-wrapper">
+                <a href="#!" target="_blank" class="fbIcon">
+                  <img src="./assets/imgs/icons/fbIcon.svg" alt="" />
+                </a>
+              </div>
+              <div class="icon-wrapper">
+                <a href="#!" target="_blank" class="twitterIcon">
+                  <img src="./assets/imgs/icons/twitterIcon.svg" alt="" />
+                </a>
+              </div>
+              <div class="icon-wrapper">
+                <a href="#!" target="_blank" class="instagramIcon">
+                  <img src="./assets/imgs/icons/instagramIcon.svg" alt="" />
+                </a>
+              </div>
+              <div class="icon-wrapper">
+                <a href="#!" target="_blank" class="mailIcon">
+                  <img src="./assets/imgs/icons/mail.svg" alt="" />
+                </a>
+              </div>
+              <div class="icon-wrapper">
+                <a href="#!" target="_blank" class="whatsAppIcon">
+                  <img src="./assets/imgs/icons/whatsappIcon.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="page-footer font-small blue pt-4">
+        <!-- Footer Links -->
+        <div class="container top-footer">
+          <!-- Grid row -->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3 top-col">
+              <!-- Links -->
+              <h5 class=" ">About</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <p>Empirent a.s.: IČO: 27416445</p>
+                </li>
+                <li>
+                  <p>Vlastislavova 152/4</p>
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3 top-col">
+              <!-- Links -->
+              <h5 class=" ">Categories</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">View Suites</a>
+                </li>
+                <li>
+                  <a href="#!">About Us</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3 top-col">
+              <!-- Links -->
+              <h5 class=" ">How to reserve</h5>
+
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Terms and Conditions</a>
+                </li>
+                <li>
+                  <a href="#!">Compliance</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3 mb-md-0 mb-3 top-col">
+              <!-- Links -->
+              <h5 class=" ">Mentioned On</h5>
+
+              <div class="logos-wrapper">
+                <div class="single-logo-wrapper">
+                  <img src="./assets/imgs/luxury.png" alt="" />
+                </div>
+                <div class="single-logo-wrapper">
+                  <img src="./assets/imgs/amazing_places.png" alt="" />
+                </div>
+                <div class="single-logo-wrapper">
+                  <img src="./assets/imgs/kongres_magazine.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+          <div class="row text-center">
+            <div class="col text-center logos">
+              <img src="./assets/imgs/prague-logo.svg" alt="" />
+              <img src="./assets/imgs/tripadvisor-logo.svg" alt="" />
+              <img src="./assets/imgs/chechLogo.svg" alt="" />
+            </div>
+          </div>
+          <!--grid row-->
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <p>
+                  ©
+                  <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                  </script>
+                  Empirent. Make the right decision.
+                </p>
+              </div>
+              <div class="col-md-6">
+                <div class="flex-center">
+                  <!-- Facebook -->
+                  <a class="fb-ic">
+                    <i
+                      class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"
+                    >
+                    </i>
+                  </a>
+                  <!--Instagram-->
+                  <a class="ins-ic">
+                    <i
+                      class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"
+                    >
+                    </i>
+                  </a>
+                  <a class="ins-ic">
+                    <i
+                      class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"
+                    >
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </main>
+
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgb89Im1h50JwMBpLfUYMn67j2MPl4oAY&callback=initMap"
+    ></script>
+
+    <script src="./assets/libs/jquery/jquery-3.5.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="./assets/libs/jquery/jquery-migrate-1.2.1.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/libs/bootstrap/bootstrap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"
+      integrity="sha512-T/tUfKSV1bihCnd+MxKD0Hm1uBBroVYBOYSk1knyvQ9VyZJpc/ALb4P0r6ubwVPSGB2GvjeoMAJJImBG12TiaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./assets/libs/slick/slick.js"></script>
+    <script src="./assets/libs/bootstrap-input-spinner.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="./scripts/gmap.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

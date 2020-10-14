@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85.28" height="85.277" viewBox="0 0 85.28 85.277">
+  <g id="squareSubtraction" transform="translate(-1637.5 -2487.5)">
+    <path id="squarePart" d="M-2046.721,84.278H-2089V82.783h39.728l-20.921-20.922H-2089V60.367h18.368V1.494h-58.875V30H-2131V0h61.862l22.417,22.854V84.277Zm-22.417-82.144h0V60.8l20.921,20.922V23.472Z" transform="translate(3769 2488)" fill="#104877" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="squareSubtraction-2" data-name="squareSubtraction" d="M-2046.721,84.277h-61.425L-2131,61.861V30h1.494V60.367H-2089v1.494h-39.866l21.34,20.922H-2089V84h42.279v.276Z" transform="translate(3769 2488)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>
