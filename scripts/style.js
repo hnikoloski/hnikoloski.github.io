@@ -44,6 +44,8 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+$( document ).ready(function() {
+    
 if ($(window).width() > 960) {
 
 AOS.init();
@@ -71,4 +73,4 @@ AOS.init({
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
-});}
+});}});
